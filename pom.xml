@@ -4,7 +4,7 @@
 
     <groupId>udit.springframework</groupId>
     <artifactId>udit-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>udit-pet-clinic</name>
     <packaging>pom</packaging>
     <modules>
@@ -41,6 +41,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/uditmoral/udit-pet-clinic.git</developerConnection>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
 
 </project>
