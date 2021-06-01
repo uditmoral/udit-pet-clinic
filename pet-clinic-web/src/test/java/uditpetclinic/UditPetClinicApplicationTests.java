@@ -1,4 +1,4 @@
-package udit.springframework.uditpetclinic;
+package uditpetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
