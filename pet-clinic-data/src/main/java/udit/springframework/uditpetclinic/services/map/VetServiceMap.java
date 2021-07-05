@@ -1,5 +1,6 @@
 package udit.springframework.uditpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import udit.springframework.uditpetclinic.model.Speciality;
 import udit.springframework.uditpetclinic.model.Vet;
@@ -9,6 +10,7 @@ import udit.springframework.uditpetclinic.services.VetService;
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
