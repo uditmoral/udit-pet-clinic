@@ -6,8 +6,7 @@ import udit.springframework.uditpetclinic.model.Owner;
 
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 class OwnerServiceMapTest {
 
@@ -65,5 +64,11 @@ class OwnerServiceMapTest {
         Owner smith = ownerServiceMap.findByLastName(lastname);
         assertNotNull(smith);
         assertEquals(ownerId, smith.getId());
+    }
+
+    @Test
+    void findByLastNameNotFound() {
+        Owner smith = ownerServiceMap.findByLastName("foo");
+        assertNull(smith);
     }
 }
